@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">COD Camo Tracker</string>
+    <string name="cod_camos">COD Camos</string>
+    <string name="textview">TextView</string>
+    <string name="assault_rifles">Assault Rifles</string>
+    <string name="mwiii">MWIII</string>
+    <string name="mwii">MWII</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="reset">Reset</string>
+    <string name="onPaused">OnPaused</string>
+
+    <string-array name="classes">
+        <item>Assault Rifles</item>
+        <item>Battle Rifles</item>
+        <item>SMGs</item>
+        <item>Shotguns</item>
+        <item>LMGs</item>
+        <item>Marksman Rifles</item>
+        <item>Sniper Rifles</item>
+        <item>Pistols</item>
+        <item>Launchers</item>
+        <item>Melee</item>
+    </string-array>
+
+    <string-array name="game">
+        <item>MWIII</item>
+        <item>MWII</item>
+        <item>Zombies</item>
+    </string-array>
+
+</resources>
