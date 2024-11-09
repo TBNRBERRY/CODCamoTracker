@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingInflatedId">
+
+    <Spinner
+        android:id="@+id/sp_classes"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="#0277BD"
+        android:entries="@array/classes"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_dropdown" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/MWIIIChip"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="6dp"
+        android:clickable="true"
+        android:text="@string/mwiii"
+        android:textColor="#FFFFFF"
+        app:chipBackgroundColor="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sp_classes"
+        app:rippleColor="@android:color/holo_red_light" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/MWIIChip"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:clickable="true"
+        android:text="@string/mwii"
+        android:textColor="#FFFFFF"
+        app:chipBackgroundColor="@android:color/holo_green_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sp_classes"
+        app:rippleColor="@android:color/holo_green_light" />
+
+<!--    <com.google.android.material.chip.Chip-->
+<!--        android:id="@+id/resetChip"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="150dp"-->
+<!--        android:clickable="true"-->
+<!--        android:text="@string/reset"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:chipBackgroundColor="#0277BD"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/sp_classes"-->
+<!--        app:rippleColor="#039BE5" />-->
+
+    <ListView
+        android:id="@+id/mwiii"
+        android:layout_width="0dp"
+        android:layout_height="512dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="6dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/mwii"
+        android:layout_width="0dp"
+        android:layout_height="512dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="6dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_mwiii"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="6dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/mwiii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,Deprecated,LabelFor" />
+
+    <EditText
+        android:id="@+id/text_mwii"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="6dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="@string/mwii"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,Deprecated,LabelFor" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="text"-->
+<!--        android:text="@string/onPaused"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/mwii"-->
+<!--        tools:visibility="invisible"-->
+<!--        android:autofillHints=""-->
+<!--        tools:ignore="LabelFor" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
