@@ -1,6 +1,7 @@
 CODCamoTracker
 
 I made this Android app to track my Call of Duty camos and see what I have done and what I need to complete.
+
 What it does:
 
    • Tracks camo completion for Call of Duty games
